@@ -1,3 +1,5 @@
+/*Added Switch to be able to run custom command in RuleMachine on Hubitat to create door/window/buzzer rules
+*/
 metadata {
     definition(
         name: 'Konnected Button Trigger',
