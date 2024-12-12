@@ -1,0 +1,35 @@
+/* Taken from Mike Maxwell's Generic component Switch to work as Konnected ESPHome Siren Trigger in HSM
+	12-12-2024 v1.0 ScubamikeJax Inetial release
+*/
+metadata {
+    definition(
+        name: 'Konnected Siren Trigger',
+        namespace: 'konnected',
+        author: 'ScubamikeJax904',
+        singleThreaded: true,
+        importUrl: ''
+    ){
+        capability "Switch"
+        capability "Alarm"
+		}
+}
+void parse(List description) {
+    description.each {
+        if (it.name in ["switch"]) {
+            if (txtEnable) log.info it.descriptionText
+            sendEvent(it)
+        }
+    }
+}
+
+void on() {
+    parent?.componentOn(this.device)
+}
+
+void off() {
+    parent?.componentOff(this.device)
+}
+
+void refresh() {
+    parent?.componentRefresh(this.device)
+}
