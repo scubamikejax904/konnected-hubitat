@@ -5,7 +5,7 @@ metadata {
         author: 'Konnected Inc.',
             /Edited by ScubamikeJax904
         singleThreaded: true,
-        importUrl: 'https://github.com/konnected-io/konnected-hubitat/blob/master/drivers/konnected-button-trigger.groovy'
+        importUrl: 'https://raw.githubusercontent.com/scubamikejax904/konnected-hubitat/refs/heads/master/drivers/konnected%20button-trigger.groovy'
     ){
         capability "Momentary"
         capability "Switch"
