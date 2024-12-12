@@ -7,6 +7,7 @@ metadata {
         importUrl: 'https://github.com/konnected-io/konnected-hubitat/blob/master/drivers/konnected-button-trigger.groovy'
     ){
         capability "Momentary"
+        capability "Switch"
     }
 }
 
