@@ -91,7 +91,7 @@ metadata {
               type: 'bool',
               title: 'Enable descriptionText logging',
               required: false,
-              defaultValue: true
+              defaultValue: false
     }
 }
 
