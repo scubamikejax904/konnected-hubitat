@@ -38,6 +38,7 @@ metadata {
         capability 'SignalStrength'
 
         attribute 'esphomeVersion', 'string'
+        attribute 'networkStatus', 'enum', [ 'connecting', 'online', 'offline' ]
         attribute 'uptime', 'number'
 
     }
